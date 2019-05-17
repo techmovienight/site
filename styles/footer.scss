@@ -3,6 +3,10 @@
   color: rgba(255, 255, 255, 0.5) !important;
   background-color: $color-accent;
 
+  a {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
   &--wrapper {
     @extend .container;
     @extend .grid;
@@ -29,14 +33,10 @@
       flex-direction: column;
       align-items: flex-start;
     }
-
-    > a {
-      color: rgba(255, 255, 255, 0.5);
-    }
   }
 
   &--copyright {
-    grid-column-start: 5;
+    grid-column: 5 / span 2;
     margin-top: auto;
     margin-bottom: auto;
 

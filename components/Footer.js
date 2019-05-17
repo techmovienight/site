@@ -14,9 +14,10 @@ const Footer = ({ pathname }) => {
           <a href="/privacy-policy/">Privacy Policy</a>*/}
           <a href="http://berlincodeofconduct.org/">Code of Conduct</a>
         </section>
-        {/*<p className="footer--copyright">
-          © Tech Movie Night, {new Date().getFullYear()}
-        </p>*/}
+        <p className="footer--copyright">
+          © <a href="https://survivejs.com">Juho Vepsäläinen</a>,{" "}
+          {new Date().getFullYear()}
+        </p>
       </div>
     </footer>
   );

@@ -2,6 +2,8 @@ const path = require("path");
 const EVENT_NAME = "Tech Movie Night";
 
 module.exports = {
+  apiUrl: "https://api.react-finland.fi/graphql",
+  conferenceId: "techmovienight",
   template: {
     file: path.resolve(__dirname, "templates/page.ejs"),
     context: {

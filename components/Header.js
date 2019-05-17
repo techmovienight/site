@@ -26,12 +26,12 @@ const Header = ({ pathname, title }) => {
               <span className="logo--text logo--text-top">
                 Tech Movie Night
               </span>
-              <span className="logo--text logo--text-bottom" />
+              <span className="logo--text logo--text-bottom">
+                Tech movies together
+              </span>
             </span>
           </h1>
         </Link>
-
-        <h2 className="header--tagline">Tech movies together</h2>
 
         <section className="header--dates">
           <time dateTime="2019-04-24/2019-04-26" className="header--date">
@@ -41,7 +41,7 @@ const Header = ({ pathname, title }) => {
         </section>
         <section className="header--buy">
           <Link to="/#tickets" className="buy-button">
-            Register to meetup
+            Register to the meetup
           </Link>
         </section>
       </div>
@@ -63,7 +63,9 @@ const Header = ({ pathname, title }) => {
               <span className="logo--text logo--text-top">
                 Tech Movie Night
               </span>
-              <span className="logo--text logo--text-bottom" />
+              <span className="logo--text logo--text-bottom">
+                Tech movies together
+              </span>
             </span>
           </h1>
         </Link>

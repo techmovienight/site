@@ -4,12 +4,12 @@ import { HelmetProvider } from "react-helmet-async";
 import {
   AnchorHeader,
   AnchorProvider,
-  //Contacts,
+  Contacts,
   Footer,
   Header,
   Meta,
-  //Sponsor,
-  //connect,
+  Sponsor,
+  connect,
 } from "../components";
 
 import "normalize.css/normalize.css";
@@ -24,6 +24,7 @@ const SiteBody = (
     page: {
       file: { title, description, keywords },
     },
+    conference: { partners } = { partners: [] },
   },
   { router }
 ) => (
@@ -45,18 +46,15 @@ const SiteBody = (
           <section className="grid grid_6col">
             {children}
             <div className="grid--full">
-              <div className="sponsors">
+              <div className="sponsors sponsors_partners">
                 <AnchorHeader
                   className="sponsors--heading visually-hidden"
                   level={2}
                 >
                   Partners
                 </AnchorHeader>
-              </div>
-
-              <div className="sponsors sponsors_partners">
                 <section className="sponsors--list">
-                  {/*<Contacts items={partners} render={Sponsor} />*/}
+                  <Contacts items={partners} render={Sponsor} />
                 </section>
               </div>
             </div>
@@ -79,4 +77,24 @@ SiteBody.propTypes = {
   }),
 };
 
-export default SiteBody;
+export default connect(`
+  query SponsorQuery($conferenceId: ID!) {
+    conference(id: $conferenceId) {
+      partners {
+        ...SponsorFragment
+      }
+    }
+  }
+
+  fragment SponsorFragment on Contact {
+    name
+    social {
+      homepage
+    }
+    about
+    image {
+      url
+    }
+  }
+
+`)(SiteBody);

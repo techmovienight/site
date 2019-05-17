@@ -301,6 +301,12 @@ address {
     display: block;
     color: #fff;
   }
+
+  &--text-bottom {
+    margin-top: 2em;
+    font-size: 70%;
+    text-align: center;
+  }
 }
 
 .header {
@@ -450,6 +456,7 @@ address {
 
 .buy-button {
   padding: $pu * 3 $pu * 5;
+  white-space: nowrap;
   border-radius: 100px;
   background-color: white;
   color: darken($rf-blue, 30%);
