@@ -15,13 +15,13 @@ const Header = ({ pathname, title }) => {
         <Navigation pathname={pathname} pages={navigationPages} />
         <Link to="/" className="rubric site-name header--logo">
           <h1 className="logo">
-            <img
+            {/*<img
               src={logo}
               width={140}
               height={126}
               alt="Tech Movie Night Logo"
               className="logo--image"
-            />
+            />*/}
             <span className="logo--title">
               <span className="logo--text logo--text-top">
                 Tech Movie Night
