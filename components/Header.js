@@ -40,7 +40,10 @@ const Header = ({ pathname, title }) => {
           <address className="header--location">SAE, Vienna</address>
         </section>
         <section className="header--buy">
-          <Link to="/#tickets" className="buy-button">
+          <Link
+            to="https://www.meetup.com/Tech-Movie-Night/"
+            className="buy-button"
+          >
             Register to the meetup
           </Link>
         </section>
