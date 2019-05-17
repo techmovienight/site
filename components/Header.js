@@ -34,8 +34,8 @@ const Header = ({ pathname, title }) => {
         </Link>
 
         <section className="header--dates">
-          <time dateTime="2019-04-24/2019-04-26" className="header--date">
-            Next event: xx.06.2019
+          <time dateTime="2019-04-21" className="header--date">
+            Next event: 21.06.2019
           </time>
           <address className="header--location">SAE, Vienna</address>
         </section>
