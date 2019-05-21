@@ -13,25 +13,24 @@ const Header = ({ pathname, title }) => {
     <header className={"header header_index"}>
       <div className="header--container container grid grid_6col">
         <Navigation pathname={pathname} pages={navigationPages} />
-        <Link to="/" className="rubric site-name header--logo">
-          <h1 className="logo">
-            {/*<img
-              src={logo}
-              width={140}
-              height={126}
-              alt="Tech Movie Night Logo"
-              className="logo--image"
-            />*/}
-            <span className="logo--title">
-              <span className="logo--text logo--text-top">
-                Tech Movie Night
-              </span>
-              <span className="logo--text logo--text-bottom">
-                Tech movies together
-              </span>
-            </span>
-          </h1>
+        <Link to="/" className="rubric site-name header--logo logo">
+          <img
+            src={logo}
+            width={146}
+            height={150}
+            alt="Tech Movie Night Logo"
+            className="logo--image"
+          />
         </Link>
+
+        <section className="header--title">
+          <span className="logo--title">
+            <h1 className="logo--text logo--text-top">Tech Movie Night</h1>
+            <h2 className="logo--text logo--text-bottom">
+              Tech movies together
+            </h2>
+          </span>
+        </section>
 
         <section className="header--dates">
           <time dateTime="2019-04-21" className="header--date">
