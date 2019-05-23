@@ -349,7 +349,7 @@ address {
       &--image {
         width: auto;
         height: auto;
-        filter: drop-shadow(0 0 1em rgba(255, 255, 255, 0.8));
+        filter: drop-shadow(0 0 0.75em rgba(255, 255, 255, 0.8));
       }
       &--title {
         display: block;

@@ -16,7 +16,7 @@ const Header = ({ pathname, title }) => {
         <Link to="/" className="rubric site-name header--logo logo">
           <img
             src={logo}
-            width={146}
+            width={150}
             height={150}
             alt="Tech Movie Night Logo"
             className="logo--image"
