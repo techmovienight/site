@@ -33,11 +33,11 @@ const Header = ({ pathname, title }) => {
         </section>
 
         <section className="header--dates">
-          <time dateTime="2019-12-04" className="header--date">
-            Next event: 04.12.2019
+          <time dateTime="2020-01-20" className="header--date">
+            Next event: 20.01.2020
           </time>
-          <div className="header--topic">Topic: Gluehwein</div>
-          <address className="header--location">Freyung, Vienna</address>
+          <div className="header--topic">Topic: Tailwind.css</div>
+          <address className="header--location">9y, Vienna</address>
         </section>
         <section className="header--buy">
           <Link
